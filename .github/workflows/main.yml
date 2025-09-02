@@ -27,7 +27,7 @@ jobs:
 
   build:
     runs-on: ubuntu-latest
-    nedds: [lint]
+    needs: [lint]
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
